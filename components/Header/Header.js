@@ -3,8 +3,8 @@ import Link from 'next/link';
 import styles from './Header.module.css';
 export default function Header() {
   return (
-    <header>
-      <div className={styles.header}></div>
+    <header className={styles.header}>
+      <div className={styles.greenLine}></div>
       <Container>
         <nav className={styles.nav}>
           <span>Markus Wiland</span>

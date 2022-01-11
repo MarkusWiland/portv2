@@ -1,0 +1,8 @@
+.section {
+  margin-top: -5rem;
+  margin-bottom: 5rem;
+  min-height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

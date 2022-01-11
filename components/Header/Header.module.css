@@ -1,4 +1,8 @@
 .header {
+  position: sticky;
+  top: 0;
+}
+.greenLine {
   height: 10px;
   background-color: green;
   width: 100%;
@@ -6,6 +10,7 @@
 .nav {
   display: flex;
   padding: 1rem 0rem;
+  height: 80px;
   justify-content: space-between;
   align-items: center;
 }
