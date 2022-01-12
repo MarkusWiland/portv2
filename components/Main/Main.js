@@ -1,4 +1,4 @@
-import styles from './Main.module.css';
+import styles from "./Main.module.css";
 export default function Main() {
   return (
     <section className={styles.section}>
@@ -6,8 +6,9 @@ export default function Main() {
         <h1>Hej och välkommen till Markus Wiland</h1>
         <h3>Jag jobbar som IT-Konsult och älskar React och Next js.</h3>
         <p>lite om mig här</p>
-        <span>
-          <button>Läs Blogg</button>
+        <span className={styles.buttons}>
+          <button className={styles.button}>Läs Blogg</button>
+          <button className={styles.button}>Läs mer om mig</button>
         </span>
       </article>
     </section>
