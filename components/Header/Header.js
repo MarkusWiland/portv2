@@ -1,7 +1,9 @@
-import { Container } from "../../components";
-import Link from "next/link";
-import styles from "./Header.module.css";
+import { Container } from '../../components';
+import Link from 'next/link';
+import styles from './Header.module.css';
+import { useRouter } from 'next/router';
 export default function Header() {
+  const router = useRouter();
   return (
     <header className={styles.header}>
       <div className={styles.greenLine}></div>
@@ -11,17 +13,21 @@ export default function Header() {
           <ul className={styles.ul}>
             <li>
               <Link href="/">
-                <a>Home</a>
+                <a className={router.pathname == '/' ? styles.a : ''}>Home</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
-                <a>Blog</a>
+              <Link href="/blog">
+                <a className={router.pathname == '/blog' ? styles.a : ''}>
+                  Blog
+                </a>
               </Link>
             </li>
             <li>
-              <Link href="/">
-                <a>Contact</a>
+              <Link href="/contact">
+                <a className={router.pathname == '/contact' ? styles.a : ''}>
+                  Contact
+                </a>
               </Link>
             </li>
           </ul>

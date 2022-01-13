@@ -4,12 +4,13 @@
   --foreground: #f8f8f2;
   --selection: #44475a;
   --cyan: #8be9fd;
-  --green: aquamarine;
+  --blue: #0dc1e9;
   --orange: #ffb86c;
   --textColor: #ffffff;
   --ptext: #d1d5db;
   --pink: #ff79c6;
   --purple: #bd93f9;
+  --borderBottom: rgba(146, 146, 146, 0.479);
   --red: #f55;
   --yellow: #f1fa8c;
 }

@@ -1,10 +1,11 @@
 .header {
   position: sticky;
   top: 0;
+  border-bottom: 1px solid var(--borderBottom);
 }
 .greenLine {
-  height: 10px;
-  background-color: var(--green);
+  height: 7px;
+  background-color: var(--blue);
   width: 100%;
 }
 .nav {
@@ -30,5 +31,11 @@
   border-radius: 4px;
 }
 .buttonIcon:hover {
-  border-color: var(--green);
+  border-color: var(--blue);
+}
+.a {
+  color: green;
+}
+.a:hover {
+  color: var(--blue);
 }
