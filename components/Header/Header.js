@@ -1,6 +1,6 @@
-import { Container } from '../../components';
-import Link from 'next/link';
-import styles from './Header.module.css';
+import { Container } from "../../components";
+import Link from "next/link";
+import styles from "./Header.module.css";
 export default function Header() {
   return (
     <header className={styles.header}>
@@ -25,6 +25,7 @@ export default function Header() {
               </Link>
             </li>
           </ul>
+          <button className={styles.buttonIcon}>Icon</button>
         </nav>
       </Container>
     </header>

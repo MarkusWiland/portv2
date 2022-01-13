@@ -21,3 +21,14 @@
   list-style: none;
   padding: 0px 1rem;
 }
+.buttonIcon {
+  background-color: var(--background);
+  color: white;
+  padding: 1rem 0.75rem;
+  border: solid 1px gray;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.buttonIcon:hover {
+  border-color: aquamarine;
+}
