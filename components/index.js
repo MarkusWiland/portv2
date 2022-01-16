@@ -4,3 +4,4 @@ export { default as Container } from './Container/Container';
 export { default as Layout } from './Layout/Layout';
 export { default as Main } from './Main/Main';
 export { default as Button } from './Button/Button';
+export { default as Posts } from './Posts/Posts';

@@ -13,19 +13,19 @@ export default function Header() {
           <ul className={styles.ul}>
             <li>
               <Link href="/">
-                <a className={router.pathname == '/' ? styles.a : ''}>Home</a>
+                <a className={router.pathname === '/' ? styles.a : ''}>Home</a>
               </Link>
             </li>
             <li>
               <Link href="/blog">
-                <a className={router.pathname == '/blog' ? styles.a : ''}>
+                <a className={router.pathname === '/blog' ? styles.a : ''}>
                   Blog
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/contact">
-                <a className={router.pathname == '/contact' ? styles.a : ''}>
+                <a className={router.pathname === '/contact' ? styles.a : ''}>
                   Contact
                 </a>
               </Link>

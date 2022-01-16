@@ -1,5 +1,6 @@
 :root {
   --background: #272727;
+  --searchInput: #414141;
   --comment: #6272a4;
   --foreground: #f8f8f2;
   --selection: #44475a;
@@ -39,4 +40,32 @@ a {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+.searchInput {
+  background-color: var(--searchInput);
+  border-radius: 4px;
+  border: 1px solid var(--borderBottom);
+  color: var(--textColor);
+  padding: 1rem;
+  width: 100%;
+}
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #424242;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
