@@ -1,7 +1,7 @@
-import Head from 'next/head';
-import React from 'react';
-import { Layout, Posts } from '../components';
-
+import Head from "next/head";
+import React from "react";
+import { Layout, Posts } from "../components";
+import styles from "../components/Posts/Posts.module.css";
 export default function blog() {
   return (
     <Layout>
@@ -11,24 +11,26 @@ export default function blog() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <input type="text" className="searchInput" />
-      <Posts
-        title={'Detta är ett blogg inlägg'}
-        content={
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis'
-        }
-      />
-      <Posts
-        title={'Detta är ett blogg inlägg'}
-        content={
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis'
-        }
-      />
-      <Posts
-        title={'Detta är ett blogg inlägg'}
-        content={
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis'
-        }
-      />
+      <article className={styles.gridPosts}>
+        <Posts
+          title={"Detta är ett blogg inlägg"}
+          content={
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis"
+          }
+        />
+        <Posts
+          title={"Detta är ett blogg inlägg"}
+          content={
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis"
+          }
+        />
+        <Posts
+          title={"Detta är ett blogg inlägg"}
+          content={
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis"
+          }
+        />
+      </article>
     </Layout>
   );
 }
